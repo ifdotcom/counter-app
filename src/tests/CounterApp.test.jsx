@@ -31,7 +31,7 @@ describe("Pruebas en CounterApp", () => {
     fireEvent.click(screen.getByText("+1"));
     fireEvent.click(screen.getByText("+1"));
     // fireEvent.click(screen.getByText("Reset"));
-    fireEvent(screen.getByRole("button", { name: "btn-reset" }));
+    fireEvent.click(screen.getByRole("button", { name: "btn-reset" }));
     // screen.debug();
     expect(screen.getByText(10)).toBeTruthy();
   });
